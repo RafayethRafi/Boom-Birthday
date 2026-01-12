@@ -6,70 +6,14 @@
     <title>Boom's Birthday Bash</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;600;700&family=Bangers&display=swap" rel="stylesheet">
-    <style>
-      body {
-        font-family: 'Fredoka', sans-serif;
-        background-color: #050505;
-        overflow-x: hidden;
-      }
-      .font-bangers {
-        font-family: 'Bangers', cursive;
-      }
-      /* 3D Scene Styles */
-      .scene {
-        perspective: 1000px;
-      }
-      .cube {
-        transform-style: preserve-3d;
-        transition: transform 0.1s;
-      }
-      .cube-face {
-        position: absolute;
-        backface-visibility: visible; 
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        box-shadow: 0 0 15px rgba(253, 224, 71, 0.1);
-      }
-      .cube-face-front  { transform: rotateY(  0deg) translateZ(150px); }
-      .cube-face-right  { transform: rotateY( 90deg) translateZ(150px); }
-      .cube-face-back   { transform: rotateY(180deg) translateZ(150px); }
-      .cube-face-left   { transform: rotateY(-90deg) translateZ(150px); }
-      .cube-face-top    { transform: rotateX( 90deg) translateZ(150px); }
-      .cube-face-bottom { transform: rotateX(-90deg) translateZ(150px); }
-
-      /* Neon Pulse Animation */
-      @keyframes neon-pulse {
-        0%, 100% { box-shadow: 0 0 10px #fde047, 0 0 20px #fde047, inset 0 0 5px #fde047; border-color: rgba(253, 224, 71, 0.8); }
-        50% { box-shadow: 0 0 20px #f59e0b, 0 0 40px #f59e0b, inset 0 0 10px #f59e0b; border-color: rgba(245, 158, 11, 1); }
-      }
-
-      .neon-border {
-        animation: neon-pulse 3s infinite alternate;
-      }
-
-      @keyframes holo-shimmer {
-        0% { background-position: 0% 50%; }
-        50% { background-position: 100% 50%; }
-        100% { background-position: 0% 50%; }
-      }
-
-      .holo-bg {
-        background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.05) 25%, rgba(255,255,255,0) 50%, rgba(255,255,255,0.05) 75%, rgba(255,255,255,0.1) 100%);
-        background-size: 200% 200%;
-        animation: holo-shimmer 5s ease infinite;
-      }
-
-      ::-webkit-scrollbar { width: 8px; }
-      ::-webkit-scrollbar-track { background: rgba(255, 255, 255, 0.1); border-radius: 4px; }
-      ::-webkit-scrollbar-thumb { background: rgba(255, 255, 255, 0.3); border-radius: 4px; }
-      ::-webkit-scrollbar-thumb:hover { background: rgba(255, 255, 255, 0.5); }
-    </style>
   <script type="importmap">
 {
   "imports": {
-    "react/": "https://esm.sh/react@^19.2.3/",
     "react": "https://esm.sh/react@^19.2.3",
     "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
-    "@google/genai": "https://esm.sh/@google/genai@^1.35.0"
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.2",
+    "vite": "https://esm.sh/vite@^7.3.1"
   }
 }
 </script>
@@ -79,6 +23,6 @@
     <div id="root"></div>
     <!-- YouTube API -->
     <script src="https://www.youtube.com/iframe_api"></script>
-  <script type="module" src="/index.tsx"></script>
-</body>
+    <script type="module" src="/index.tsx"></script>
+  </body>
 </html>
