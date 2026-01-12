@@ -54,7 +54,7 @@ const App: React.FC = () => {
   const [isPlaying, setIsPlaying] = useState(false);
   
   // Static content
-  const wish = "Happy Birthday! Boom. I ain't that good at this but here is something in my language. Don't be so hard on youself. You are Purrfect just the way you are. Every day is a mystery box and some may contain what you really need. Life will beat the shit out of you , so what you are Booooom !!";
+  const wish = "Happy Birthday! Boom. I ain't that good at this but here is something in my language. Don't be so hard on youself. You are Purrfect just the way you are. Everyday is a mystery box and some may contain what you really need. Life will beat the shit out of you , so what you are Booooom !!";
   const texture = "https://images.unsplash.com/photo-1513151233558-d860c5398176?q=80&w=1000&auto=format&fit=crop"; 
   const videoId = "n4yY5fJ_s50"; 
 
